@@ -1,20 +1,28 @@
-import React from "react";
-import { Text } from "react-native";
+import React from 'react';
+import { View, Text } from 'react-native';
 
-export default function Comp () {
-    return (
-        <Text>Comp #Oficial</Text>
-    )
+import Style from './style';
+
+export default function Comp() {
+  return (
+    <View style={Style.container}>
+      <Text style={Style.txtG}>Comp #Oficial</Text>
+    </View>
+  );
 }
 
-export function Comp1 () {
-    return (
-        <Text>Comp #01</Text>
-    )
+export function Comp1() {
+  return (
+    <View style={Style.container}>
+      <Text style={Style.txtG}>Comp #01</Text>
+    </View>
+  );
 }
 
-export function Comp2 () {
-    return (
-        <Text>Comp #02</Text>
-    )
+export function Comp2() {
+  return (
+    <View style={Style.container}>
+      <Text style={Style.txtG}>Comp #02</Text>
+    </View>
+  );
 }

@@ -1,16 +1,22 @@
 import React from 'react';
 import { StyleSheet, SafeAreaView, Text} from 'react-native';
 
-import CompPadrao, { Comp1, Comp2 } from './components/Multi'
+// import CompPadrao, { Comp1, Comp2 } from './components/Multi'
 import Primeiro from './components/Primeiro';
+import Title from './components/Title';
+// import MinMax from './components/MinMax';
+import Botao from './components/Botao';
+
 
 export default () => (
   <SafeAreaView style={style.App}>
-    <Primeiro />
+    <Title primary="Cadastro Produto" secondary="Tela de Cadastro"/>
+    <Botao />
+    <Primeiro/>
+    {/* <MinMax min='3' max='20' />
     <CompPadrao />
     <Comp1 />
-    <Comp2 />
-    <Text>AAAAAAAAAAAAAAAAA</Text>
+    <Comp2 /> */}
   </SafeAreaView>
 );
 
@@ -20,6 +26,6 @@ const style = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     padding: 20,
-    backgroundColor: '#7B543B',
+    backgroundColor: '#6508D7',
   },
 });
